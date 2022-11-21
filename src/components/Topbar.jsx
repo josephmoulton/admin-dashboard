@@ -18,7 +18,7 @@ function Topbar() {
     <Box display="flex" justifyContent="space-between" p={2}>
       <Box
         display="flex"
-        backgroundColor={colors.primary[400]}
+        backgroundColor={colors.primary[700]}
         borderRadius="3px"
       >
         <InputBase
@@ -38,7 +38,7 @@ function Topbar() {
 
       <Box display="flex">
         <IconButton onClick={colorMode.toggleColorMode}>
-          {theme.palette.mode == "dark" ? (
+          {theme.palette.mode === "dark" ? (
             <LightModeOutlinedIcon/>
           ) : (
             <DarkModeOutlinedIcon />
