@@ -38,33 +38,11 @@ const BarChart = ({ isDashboard = false }) => {
             fill: colors.grey[100],
           },
         },
-        labels: { text: { fill: colors.grey[100] } },
         tooltip: {
-          container: {
-            background: "white",
-            color: "inherit",
-            fontSize: "inherit",
-            borderRadius: "2px",
-            boxShadow: "0 1px 2px rgba(0, 0, 0, 0.25)",
-            padding: "5px 9px",
+            container: {
+              color: colors.primary[500],
+            },
           },
-          basic: {
-            whiteSpace: "pre",
-            display: "flex",
-            alignItems: "center",
-          },
-          table: {},
-          tableCell: {
-            padding: "3px 5px",
-          },
-        },
-        annotations: {
-          text: {
-            fontSize: 13,
-            outlineWidth: 2,
-            outlineColor: "#ffffff",
-          },
-        },
       }}
       keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
       indexBy="country"
@@ -140,6 +118,7 @@ const BarChart = ({ isDashboard = false }) => {
             {
               on: "hover",
               style: {
+                itemBackground: "rgba(0, 0, 0, .03)",
                 itemOpacity: 1,
               },
             },
